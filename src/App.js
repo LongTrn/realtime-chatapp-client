@@ -23,7 +23,7 @@ import Register from './components/Register/Register.jsx'
 axios.default({
   baseURL: process.env.REACT_APP_SERVER_URL,
   headers: {
-    "content-type": "application/json",
+    "Content-type": "application/json",
   }
 })
 
