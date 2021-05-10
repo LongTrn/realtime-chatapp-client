@@ -20,14 +20,14 @@ import PublicRoute from './components/Route/PublicRoute.jsx'
 
 import Register from './components/Register/Register.jsx'
 
-export default axios.create({
+axios.create({
   baseURL: process.env.REACT_APP_SERVER_URL,
   headers: {
     "content-type": "application/json",
   }
 })
 
-function App() {
+export default function App() {
 
   const jwt = useSelector(state => state.jwt)
   const user = useSelector(state => state.session)
@@ -60,5 +60,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
