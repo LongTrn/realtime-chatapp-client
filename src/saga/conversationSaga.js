@@ -1,5 +1,5 @@
 import { put, takeEvery, select, takeLatest } from 'redux-saga/effects'
-import axios from "axios"
+import axios from '../services/base.server';
 
 import {
     FETCH_CONVERSATION,

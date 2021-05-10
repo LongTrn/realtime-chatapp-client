@@ -3,7 +3,8 @@ import {MessageOutlined} from '@ant-design/icons'
 import { Link, useHistory } from 'react-router-dom'
 import { useSelector, useDispatch} from 'react-redux'
 import './SearchResultItem.scss'
-import axios from 'axios';
+import axios from '../../services/base.server';
+
 import { PUSH_CONVERSATION, MAKE_CONVERSATION } from '../../redux/conversation/conversationActionType'
 function SearchResultItem(props) {
     const { data } =  props 

@@ -6,7 +6,7 @@ import {
     REGISTER_FAILURE
 } from '../redux/register/registerActionType'
 import { LOGIN, LOGIN_SUCCESS } from '../redux/login/loginActionType'
-import axios from 'axios'
+import axios from "../services/base.server"
 
 export function* workerRegister(action) {
     try {

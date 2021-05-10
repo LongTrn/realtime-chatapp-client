@@ -5,7 +5,7 @@ import {
     SEARCH_SUCCESS,
     SEARCH_FAILURE
 } from '../redux/search/searchActionType'
-import axios from 'axios'
+import axios from '../services/base.server';
 
 export function* workerSearch(action) {
     try {

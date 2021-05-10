@@ -1,5 +1,5 @@
 import { call, put, takeEvery, select } from 'redux-saga/effects'
-import axios from 'axios'
+import axios from '../services/base.server';
 import { io } from "socket.io-client";
 
 

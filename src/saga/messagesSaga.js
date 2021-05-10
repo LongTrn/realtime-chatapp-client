@@ -6,9 +6,7 @@ import {
     FETCH_MESSAGES_FAILURE,
     SEND_MESSAGE
 } from "../redux/messages/messagesActionType"
-import axios from "axios"
-
-
+import axios from '../services/base.server';
 
 function* workerFetchMessages(action){
     /** dispatch this

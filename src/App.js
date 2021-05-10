@@ -20,13 +20,6 @@ import PublicRoute from './components/Route/PublicRoute.jsx'
 
 import Register from './components/Register/Register.jsx'
 
-axios.default({
-  baseURL: process.env.REACT_APP_SERVER_URL,
-  headers: {
-    "Content-type": "application/json",
-  }
-})
-
 export default function App() {
 
   const jwt = useSelector(state => state.jwt)
