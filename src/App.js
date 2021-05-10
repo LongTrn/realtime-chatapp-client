@@ -7,6 +7,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import axios from "axios";
 
 import { useSelector, useDispatch } from 'react-redux'
 import { KEEP_SESSION } from "./saga/authSessionSaga"
@@ -19,6 +20,12 @@ import PublicRoute from './components/Route/PublicRoute.jsx'
 
 import Register from './components/Register/Register.jsx'
 
+export default axios.create({
+  baseURL: process.env.REACT_APP_SERVER_URL,
+  headers: {
+    "content-type": "application/json",
+  }
+})
 
 function App() {
 
