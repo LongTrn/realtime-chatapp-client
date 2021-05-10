@@ -21,7 +21,7 @@ function* workerFetchConversation(action){
                 'Authorization': `Bearer ${token}` 
             }
         }
-        const response = yield axios.post("http://localhost:4000/conversation/get-list", {
+        const response = yield axios.post("/conversation/get-list", {
             userId
         }, header)
         const { conversationList } = response.data

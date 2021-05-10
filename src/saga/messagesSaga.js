@@ -38,7 +38,7 @@ function* workerFetchMessages(action){
 
         console.log(action)
 
-        const response = yield axios.post("http://localhost:4000/messages/get", action.payload, header)
+        const response = yield axios.post("/messages/get", action.payload, header)
 
         const { messages, error } = response.data
 

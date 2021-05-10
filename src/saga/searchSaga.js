@@ -24,7 +24,7 @@ export function* workerSearch(action) {
                 'Authorization': `Bearer ${token}` 
             }
         }
-        const response = yield axios.post("http://localhost:4000/users/search", {
+        const response = yield axios.post("/users/search", {
             search, userId
         }, header)
         console.log(`Search ${search}`)

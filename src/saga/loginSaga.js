@@ -19,7 +19,7 @@ export function* workerLogin(action){
         if(!username || !password) throw new Error("Username and Password are required!")
         yield put({type : LOGIN_START})
         //send login req
-        const response = yield axios.post(`http://localhost:4000/auths/login`, {
+        const response = yield axios.post(`/auths/login`, {
             username, password
         })
         yield console.log(response)
